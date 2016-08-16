@@ -16,6 +16,8 @@ prints objects like:
  company   Kassulke, O'Keefe and Grady
 ```
 
+\* flattens nested objects
+
 ### Installation
 
 ```
