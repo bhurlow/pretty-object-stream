@@ -11,12 +11,16 @@ function emptySpace(n) {
   return s
 }
 
+function escapeVal(s) {
+  return s.replace(/\n/g, '\\n')
+}
+
 function formatKey(k, val, max) {
   var s = ' '
   var leftPadAmount = max - k.length
   s += (emptySpace(leftPadAmount) + chalk.blue(k))
   s += emptySpace(3)
-  s += chalk.grey(val)
+  s += chalk.grey(escapeVal(val))
   s += '\n'
   return s
 }
